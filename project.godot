@@ -14,6 +14,10 @@ config/name="Shoot em up"
 run/main_scene="res://Start_Menu.tscn"
 config/icon="res://icon.png"
 
+[autoload]
+
+Globals="*res://Globals.gd"
+
 [display]
 
 window/size/width=512
@@ -46,8 +50,10 @@ shoot=[ Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_n
 
 2d_physics/layer_1="walls"
 2d_physics/layer_2="enemies"
-2d_physics/layer_3="bullets"
+2d_physics/layer_3="player_bullets"
 2d_physics/layer_4="player"
+2d_physics/layer_5="enemy_walls"
+2d_physics/layer_6="enemy_bullets"
 
 [rendering]
 
