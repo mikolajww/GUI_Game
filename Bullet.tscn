@@ -11,12 +11,12 @@ extents = Vector2( 2.16856, 6.28432 )
 [node name="Bullet" type="KinematicBody2D"]
 
 input_pickable = false
-collision_layer = 4
-collision_mask = 2
+collision_layer = 0
+collision_mask = 0
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
-velocity = Vector2( 0, -20 )
+velocity = Vector2( 0, -10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 
@@ -25,7 +25,7 @@ shape = SubResource( 1 )
 [node name="Timer" type="Timer" parent="." index="1"]
 
 process_mode = 0
-wait_time = 1.0
+wait_time = 5.0
 one_shot = true
 autostart = true
 
