@@ -20,6 +20,7 @@ func fire():
 	var bullet_left = BULLET.instance()
 	bullet_left.global_position = $KinematicBody2D/Gun_Left.global_position
 	get_parent().add_child(bullet_left)
+	$BulletSound.play()
 
 func _on_Timer_timeout():
 	can_shoot = true
@@ -27,7 +28,6 @@ func _on_Timer_timeout():
 
 func _on_Bullet_Enemy_Hit():
 	points += 1
-	print(points)
 	
 func destroy():
 	pass

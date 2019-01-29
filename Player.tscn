@@ -3,21 +3,12 @@
 [ext_resource path="res://Player.gd" type="Script" id=1]
 [ext_resource path="res://KinematicBody2D.gd" type="Script" id=2]
 [ext_resource path="res://ship_64.png" type="Texture" id=3]
+[ext_resource path="res://laser-shot-silenced.wav" type="AudioStream" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
 
 custom_solver_bias = 0.0
 extents = Vector2( 27.9826, 31.8103 )
-
-[sub_resource type="AudioStreamSample" id=2]
-
-format = 0
-loop_mode = 0
-loop_begin = 0
-loop_end = 0
-mix_rate = 44100
-stereo = false
-data = PoolByteArray(  )
 
 [node name="Player" type="Node2D" groups=[
 "Player",
@@ -33,7 +24,7 @@ __meta__ = {
 
 input_pickable = false
 collision_layer = 8
-collision_mask = 3
+collision_mask = 33
 collision/safe_margin = 0.08
 script = ExtResource( 2 )
 _sections_unfolded = [ "Collision", "collision" ]
@@ -66,10 +57,10 @@ wait_time = 0.7
 one_shot = false
 autostart = false
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="2"]
+[node name="BulletSound" type="AudioStreamPlayer" parent="." index="2"]
 
-stream = SubResource( 2 )
-volume_db = 0.0
+stream = ExtResource( 4 )
+volume_db = -8.0
 pitch_scale = 1.0
 autoplay = false
 mix_target = 0
