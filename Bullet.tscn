@@ -1,0 +1,39 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Bullet.gd" type="Script" id=1]
+[ext_resource path="res://bullet.png" type="Texture" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 2.16856, 6.28432 )
+
+[node name="Bullet" type="KinematicBody2D"]
+
+input_pickable = false
+collision_layer = 4
+collision_mask = 2
+collision/safe_margin = 0.08
+script = ExtResource( 1 )
+_sections_unfolded = [ "Collision" ]
+velocity = Vector2( 0, -20 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
+
+shape = SubResource( 1 )
+
+[node name="Timer" type="Timer" parent="." index="1"]
+
+process_mode = 0
+wait_time = 1.0
+one_shot = true
+autostart = true
+
+[node name="Sprite" type="Sprite" parent="." index="2"]
+
+position = Vector2( 9.53674e-007, 0 )
+texture = ExtResource( 2 )
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+
