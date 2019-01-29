@@ -6,11 +6,10 @@ func _ready():
 
 func _input(event):
 	if(event.is_action_pressed("ui_pause")):
-		audio_pos = get_parent().get_node("AudioStreamPlayer").get_playback_position()
+		audio_pos = get_parent().get_node("Soundtrack").get_playback_position()
 		if(!get_tree().paused):
-			get_parent().get_node("AudioStreamPlayer").stop()
+			get_parent().get_node("Soundtrack").stop()
 		else:
-			get_parent().get_node("AudioStreamPlayer").play(audio_pos)
+			get_parent().get_node("Soundtrack").play(audio_pos)
 		get_tree().paused = !(get_tree().paused)
-	$CenterContainer.visible = get_tree().paused
-	$HSlider.visible = get_tree().paused
+	$Pause.visible = get_tree().paused
