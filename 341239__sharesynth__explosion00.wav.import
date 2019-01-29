@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/341239__sharesynth__explosion00.wav-a176c7ca39980067a43e4198836364c0.sample"
+
+[deps]
+
+source_file="res://341239__sharesynth__explosion00.wav"
+dest_files=[ "res://.import/341239__sharesynth__explosion00.wav-a176c7ca39980067a43e4198836364c0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0
