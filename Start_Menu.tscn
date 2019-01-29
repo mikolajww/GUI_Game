@@ -1,0 +1,218 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Start_Menu.gd" type="Script" id=1]
+[ext_resource path="res://font.tres" type="DynamicFont" id=2]
+[ext_resource path="res://font_small.tres" type="DynamicFont" id=3]
+[ext_resource path="res://Link_Button.gd" type="Script" id=4]
+[ext_resource path="res://Background.tscn" type="PackedScene" id=5]
+
+[node name="Start_Menu" type="Node2D" index="0"]
+
+z_index = 50
+script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="Control" type="Control" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 272.0
+margin_right = 512.0
+margin_bottom = 443.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = false
+
+[node name="StartGame" type="Button" parent="Control/CenterContainer" index="0"]
+
+pause_mode = 2
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 97.0
+margin_top = 52.0
+margin_right = 414.0
+margin_bottom = 119.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "Start Game"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="CenterContainer4" type="CenterContainer" parent="Control" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 400.0
+margin_right = 512.0
+margin_bottom = 571.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = false
+
+[node name="Controls" type="Button" parent="Control/CenterContainer4" index="0"]
+
+pause_mode = 2
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 118.0
+margin_top = 52.0
+margin_right = 394.0
+margin_bottom = 119.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "Controls"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="CenterContainer2" type="CenterContainer" parent="Control" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 72.0
+margin_right = 512.0
+margin_bottom = 141.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = false
+
+[node name="Label" type="Label" parent="Control/CenterContainer2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 107.0
+margin_right = 404.0
+margin_bottom = 125.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_shadow = Color( 0.6, 0.458824, 0.466667, 1 )
+text = "Galactic 
+Adventure"
+align = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="CenterContainer3" type="CenterContainer" parent="Control" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 728.0
+margin_right = 512.0
+margin_bottom = 765.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = false
+
+[node name="Label" type="LinkButton" parent="Control/CenterContainer3" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 134.0
+margin_top = 4.0
+margin_right = 378.0
+margin_bottom = 33.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 3 )
+custom_colors/font_color = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "Github Repository"
+underline = 1
+script = ExtResource( 4 )
+
+[node name="Background" parent="." index="1" instance=ExtResource( 5 )]
+
+[connection signal="pressed" from="Control/CenterContainer/StartGame" to="." method="_on_StartGame_pressed"]
+
+[connection signal="pressed" from="Control/CenterContainer4/Controls" to="." method="_on_Controls_pressed"]
+
+[connection signal="pressed" from="Control/CenterContainer3/Label" to="Control/CenterContainer3/Label" method="_on_Label_pressed"]
+
+

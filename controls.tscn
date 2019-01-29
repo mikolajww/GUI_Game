@@ -1,0 +1,447 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://controls.gd" type="Script" id=1]
+[ext_resource path="res://font_small.tres" type="DynamicFont" id=2]
+[ext_resource path="res://Background.tscn" type="PackedScene" id=3]
+
+[node name="controls_ui" type="Node2D"]
+
+z_index = 50
+script = ExtResource( 1 )
+_sections_unfolded = [ "Z Index" ]
+
+[node name="bindings" type="Control" parent="." index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 50.0
+margin_top = 50.0
+margin_right = 90.0
+margin_bottom = 90.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="move_up" type="Control" parent="bindings" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 118.0
+margin_top = 206.0
+margin_right = 158.0
+margin_bottom = 246.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="bindings/move_up" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = 8.0
+margin_bottom = 37.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_shadow = Color( 0.6, 0.458824, 0.466667, 1 )
+text = "Up"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="bindings/move_up" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = -1.0
+margin_right = 232.0
+margin_bottom = 34.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="move_down" type="Control" parent="bindings" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 118.0
+margin_top = 256.0
+margin_right = 158.0
+margin_bottom = 296.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="bindings/move_down" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = 6.0
+margin_right = 20.0
+margin_bottom = 35.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_shadow = Color( 0.6, 0.458824, 0.466667, 1 )
+text = "Down"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="bindings/move_down" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = -1.0
+margin_right = 232.0
+margin_bottom = 34.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="move_left" type="Control" parent="bindings" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 118.0
+margin_top = 306.0
+margin_right = 158.0
+margin_bottom = 346.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="bindings/move_left" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = 4.0
+margin_right = 20.0
+margin_bottom = 33.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_shadow = Color( 0.6, 0.458824, 0.466667, 1 )
+text = "Left"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="bindings/move_left" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = -1.0
+margin_right = 232.0
+margin_bottom = 34.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="move_right" type="Control" parent="bindings" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 118.0
+margin_top = 356.0
+margin_right = 158.0
+margin_bottom = 396.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="bindings/move_right" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = 2.0
+margin_right = 35.0
+margin_bottom = 31.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_shadow = Color( 0.6, 0.458824, 0.466667, 1 )
+text = "Right"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="bindings/move_right" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = -1.0
+margin_right = 232.0
+margin_bottom = 34.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="ui_pause" type="Control" parent="bindings" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 118.0
+margin_top = 398.0
+margin_right = 158.0
+margin_bottom = 428.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+
+[node name="Label" type="Label" parent="bindings/ui_pause" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -40.0
+margin_top = 2.0
+margin_right = 35.0
+margin_bottom = 31.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_shadow = Color( 0.6, 0.458824, 0.466667, 1 )
+text = "Pause"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="bindings/ui_pause" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 84.0
+margin_top = -1.0
+margin_right = 232.0
+margin_bottom = 34.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 2
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+flat = true
+align = 1
+
+[node name="CenterContainer" type="CenterContainer" parent="." index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 40.0
+margin_right = 512.0
+margin_bottom = 240.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+use_top_left = false
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="contextual_help" type="Label" parent="CenterContainer" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 15.0
+margin_top = 69.0
+margin_right = 497.0
+margin_bottom = 130.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 2
+size_flags_vertical = 0
+custom_fonts/font = ExtResource( 2 )
+text = "Click on a key binding to reassign it, 
+or press the Cancel action."
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+
+[node name="Button" type="Button" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 184.0
+margin_top = 632.0
+margin_right = 320.0
+margin_bottom = 672.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "Go  Back"
+flat = true
+align = 1
+_sections_unfolded = [ "custom_colors", "custom_fonts" ]
+
+[node name="Background" parent="." index="3" instance=ExtResource( 3 )]
+
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
+
+
