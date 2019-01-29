@@ -6,7 +6,7 @@
 [ext_resource path="res://Link_Button.gd" type="Script" id=4]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=5]
 
-[node name="Start_Menu" type="Node2D"]
+[node name="Start_Menu" type="Node2D" index="0"]
 
 z_index = 50
 script = ExtResource( 1 )
