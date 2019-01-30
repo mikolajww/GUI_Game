@@ -29,7 +29,7 @@ extents = Vector2( 32, 32 )
 custom_solver_bias = 0.0
 extents = Vector2( 32, 32 )
 
-[node name="World" type="Node" index="0"]
+[node name="World" type="Node"]
 
 script = ExtResource( 1 )
 
@@ -432,8 +432,8 @@ shape = SubResource( 3 )
 
 [connection signal="timeout" from="DifficultyScaling" to="Enemies/Timer" method="_on_DifficultyScaling_timeout"]
 
-[connection signal="body_entered" from="OOBEnemyDestroyer" to="Counter" method="_on_OOBEnemyDestroyer_body_entered"]
-
 [connection signal="body_entered" from="OOBEnemyDestroyer" to="Enemies" method="_on_OOBEnemyDestroyer_body_entered"]
+
+[connection signal="body_entered" from="OOBEnemyDestroyer" to="Counter" method="_on_OOBEnemyDestroyer_body_entered"]
 
 

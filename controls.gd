@@ -60,7 +60,7 @@ func _input(event):
 		get_tree().set_input_as_handled()
 		set_process_input(false)
 		# Reinitialise the contextual help label
-		get_node("CenterContainer/contextual_help").text = "Click a key binding to reassign it \nor press the Cancel action."
+		get_node("CenterContainer/contextual_help").text = "Click a key binding to reassign it \nor press Escape to cancel."
 		if not event.is_action("ui_cancel"):
 			# Display the string corresponding to the pressed key
 			var scancode = OS.get_scancode_string(event.scancode)

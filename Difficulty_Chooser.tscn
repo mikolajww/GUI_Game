@@ -4,7 +4,7 @@
 [ext_resource path="res://font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=3]
 
-[node name="Difficulty_Chooser" type="Node2D" index="0"]
+[node name="Difficulty_Chooser" type="Node2D"]
 
 z_index = 50
 script = ExtResource( 1 )
