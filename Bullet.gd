@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-export (Vector2) var velocity = Vector2(0, -15)
+export (Vector2) var velocity = Vector2(0, -100)
 signal _bullet_hit()
 
 func _ready():

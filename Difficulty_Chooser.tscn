@@ -4,7 +4,7 @@
 [ext_resource path="res://font.tres" type="DynamicFont" id=2]
 [ext_resource path="res://Background.tscn" type="PackedScene" id=3]
 
-[node name="Difficulty_Chooser" type="Node2D"]
+[node name="Difficulty_Chooser" type="Node2D" index="0"]
 
 z_index = 50
 script = ExtResource( 1 )
@@ -48,9 +48,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_left = 151.0
-margin_right = 361.0
-margin_bottom = 301.0
+margin_left = 147.0
+margin_right = 365.0
+margin_bottom = 418.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 1
@@ -67,8 +67,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 210.0
-margin_bottom = 67.0
+margin_top = 58.0
+margin_right = 218.0
+margin_bottom = 125.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -94,9 +95,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 117.0
-margin_right = 210.0
-margin_bottom = 184.0
+margin_top = 175.0
+margin_right = 218.0
+margin_bottom = 242.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -121,9 +122,9 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_top = 234.0
-margin_right = 210.0
-margin_bottom = 301.0
+margin_top = 292.0
+margin_right = 218.0
+margin_bottom = 359.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 mouse_filter = 0
@@ -168,6 +169,34 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 
+[node name="Go_Back" type="Button" parent="Control" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 147.0
+margin_top = 641.0
+margin_right = 365.0
+margin_bottom = 708.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.6, 0.458824, 0.466667, 1 )
+custom_colors/font_color_hover = Color( 0.964706, 0.839216, 0.737255, 1 )
+custom_colors/font_color_pressed = Color( 0.964706, 0.839216, 0.737255, 1 )
+toggle_mode = false
+enabled_focus_mode = 0
+shortcut = null
+group = null
+text = "Go Back"
+flat = true
+align = 1
+
 [node name="Background" parent="." index="1" instance=ExtResource( 3 )]
 
 [connection signal="pressed" from="Control/CenterContainer/VBoxContainer/Easy" to="." method="_on_Easy_pressed"]
@@ -175,5 +204,7 @@ _sections_unfolded = [ "custom_colors", "custom_fonts" ]
 [connection signal="pressed" from="Control/CenterContainer/VBoxContainer/Normal" to="." method="_on_Normal_pressed"]
 
 [connection signal="pressed" from="Control/CenterContainer/VBoxContainer/Hard" to="." method="_on_Hard_pressed"]
+
+[connection signal="pressed" from="Control/Go_Back" to="." method="_on_Go_Back_pressed"]
 
 

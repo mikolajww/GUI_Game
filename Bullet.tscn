@@ -16,7 +16,7 @@ collision_mask = 0
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
 _sections_unfolded = [ "Collision" ]
-velocity = Vector2( 0, -10 )
+velocity = Vector2( 0, -60 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="0"]
 

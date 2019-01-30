@@ -31,3 +31,6 @@ func _on_Normal_pressed():
 
 func _on_Hard_pressed():
 	choose_difficulty("hard")
+
+func _on_Go_Back_pressed():
+	get_tree().change_scene("res://Start_Menu.tscn")
